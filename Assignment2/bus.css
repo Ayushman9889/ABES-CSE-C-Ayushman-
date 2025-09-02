@@ -14,7 +14,7 @@ body {
 nav {
     background-color: #1f1f1f;
     padding: 0.8rem 2rem;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.6);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
 }
 
 nav ul {
@@ -25,12 +25,11 @@ nav ul {
 }
 
 nav li {
-    color: #ffffff;
     font-size: 1.3rem;
     font-weight: bold;
+    color: #ffffff;
 }
 
-/* Logo styling */
 nav img {
     width: 40px;
     height: 40px;
@@ -38,7 +37,6 @@ nav img {
     border-radius: 6px;
 }
 
-/* Header */
 header {
     text-align: center;
     padding: 2rem;
@@ -55,13 +53,13 @@ main {
     margin: 2rem auto;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.7);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
 }
 
 .leftSec {
     flex: 1;
-    background-color: #1a1a1a;
     padding: 2rem;
+    background-color: #1a1a1a;
 }
 
 .leftSec h2 {
@@ -83,7 +81,7 @@ main {
     border: none;
     border-radius: 5px;
     background-color: #2c2c2c;
-    color: #fff;
+    color: #ffffff;
 }
 
 .leftSec input[type="radio"] {
@@ -94,10 +92,10 @@ main {
 .leftSec a {
     display: inline-block;
     padding: 0.8rem 1.5rem;
+    border-radius: 8px;
     background-color: #ff9800;
     color: #121212;
     font-weight: bold;
-    border-radius: 8px;
     text-decoration: none;
     transition: background 0.3s ease;
 }

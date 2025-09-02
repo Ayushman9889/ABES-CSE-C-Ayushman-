@@ -14,7 +14,7 @@ body {
 nav {
     background-color: #1f1f1f;
     padding: 0.8rem 2rem;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.6);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
 }
 
 nav ul {
@@ -25,9 +25,9 @@ nav ul {
 }
 
 nav li {
-    color: #ffffff;
     font-size: 1.3rem;
     font-weight: bold;
+    color: #ffffff;
 }
 
 nav img {
@@ -53,20 +53,20 @@ main {
     margin: 2rem auto;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.7);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
 }
 
 .leftSec {
     flex: 1;
-    background-color: #1a1a1a;
     padding: 2rem;
+    background-color: #1a1a1a;
 }
 
 .leftSec label {
     display: inline-block;
     margin: 0.5rem 0;
-    color: #e0e0e0;
     font-size: 1.2rem;
+    color: #e0e0e0;
 }
 
 .leftSec input[type="checkbox"] {
@@ -90,7 +90,7 @@ main {
 footer {
     text-align: center;
     padding: 1.5rem;
+    margin-top: 2rem;
     background-color: #1f1f1f;
     color: #ff9800;
-    margin-top: 2rem;
 }
