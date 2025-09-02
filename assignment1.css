@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+html, body {
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.navSec {
+  background: #1e1e1e;
+  padding: 1rem 2rem;
+}
+
+.navSec ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.navSec li {
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.navSec li:hover {
+  color: #ff9800;
+}
+
+.heading {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.heading h1 {
+  font-size: 2.2rem;
+  color: #222;
+}
+
+.mainSec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.mainSec img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.mainSec p {
+  max-width: 400px;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+h3 {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  color: #444;
+  text-align: center;
+}
+
+.studentSec {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.studentSec div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  width: 30%;
+}
+
+.studentSec div img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.studentSec div p {
+  font-size: 1rem;
+  color: #333;
+  margin: 0;
+}
