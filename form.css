@@ -1,0 +1,18 @@
+body{
+    background-color: #1a1a1a;
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+}
+form{
+    border: 0.25rem solid rgb(146, 128, 222);
+    border-radius: 0.35rem;
+    width: 500px;
+    margin: 2rem;
+    padding: 2rem;
+}
+label{
+    font-size: 1.2rem;
+}
+h1{
+    color: rgb(192, 190, 190);
+}
