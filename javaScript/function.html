@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #adi{
+        /* #adi{
             background-color: cornflowerblue;
             border: 2rem solid cornflowerblue;
             max-width: 200px;
@@ -16,16 +16,44 @@
             background-color: white;
             color: goldenrod;
             font-weight: 600;
-        }
+        } */
+
+
     </style>
 </head>
-<body>
-    <div id="adi">
+<body id="main">
+    <!-- <div id="adi">
         <button onclick="ad()">Click</button>
     </div>
-    <h1 id="para"></h1>
+    <h1 id="para"></h1> -->
+
+    <button onclick="red()">Red</button>
+    <button onclick="green()">Green</button>
+    <button onclick="blue()">Blue</button>
+
+    <button onclick="change()">Change</button>
 
     <script>
+
+        function red(){
+            document.getElementById("main").style.backgroundColor="red"
+        }
+        function green(){
+            document.getElementById("main").style.backgroundColor="green"
+        }
+        function blue(){
+            document.getElementById("main").style.backgroundColor="blue"
+        }
+        const val = 1;
+        function change(){
+            while(val){
+                document.getElementById("main").style.backgroundColor="red"
+                document.getElementById("main").style.backgroundColor="green"
+                document.getElementById("main").style.backgroundColor="blue"
+            }
+        }
+
+
 
         /* function abes() {
            document.write("We are student of ABES Engineering College");
@@ -39,9 +67,9 @@
         
         calc(10,4); */
 
-        function ad(){
-            document.getElementById("para").innerHTML="Hello i'm here!";
-        }
+        // function ad(){
+        //     document.getElementById("para").innerHTML="Hello i'm here!";
+        // }
 
     </script>
 </body>
