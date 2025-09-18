@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            display: flex;
+            flex-direction: row;
+            width: 100vw;
+            height: 100vh;
+        } 
+        .Card{
+            width: 100px;
+            height: 300px;
+            border: solid black 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="Card">
+            <p id="leftCardText">
+                 
+            </p>
+        </div class="Card">
+            <p id="rightCardText">
+
+            </p>    
+        </div>
+    </div>
+</body>
+<script>
+
+    const s1 = {
+        name: "John",
+        roll: 123,
+        class: "CSE"
+    }
+    const s2 = {
+        name: "joe",
+        roll: 124,
+        class: "IT"
+    }
+    const s3 = {
+        name: "Leo",
+        roll: 125,
+        class: "AIML"
+    }
+    const s4 = {
+        name: "nick",
+        roll: 126,
+        class: "CSE"
+    }
+    const s5 = {
+        name: "harry",
+        roll: 127,
+        class: "CSE"
+    }
+
+    s = [s1, s2, s3, s4, s5];
+
+    for(let i=1; i<5; i++){
+        if(s[i].class === "CSE"){
+            document.getElementById("leftCardText").innerHTML += `Name: ${s[i].name} <br> Roll: ${s[i].roll} <br> Class: ${s[i].class} <br><br>`;
+        } else {
+            document.getElementById("rightCardText").innerHTML += `Name: ${s[i].name} <br> Roll: ${s[i].roll} <br> Class: ${s[i].class} <br><br>`;
+        }
+    }
+</script>
+</html>
