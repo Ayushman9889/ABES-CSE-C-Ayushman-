@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .todo-input-card {
+        display: block;
+        width: 300px;
+        height: 50px;
+        border: 1px solid black;
+        margin: auto;
+        margin-top: 50px;
+        padding: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        background-color: #f9f9f9;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .todo-list-card {
+        display: none;
+        width: 300px;
+        height: 400px;
+        border: 1px solid black;
+        margin: auto;
+        margin-top: 50px;
+        padding: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        background-color: #f9f9f9;
+    }
+    .todoListButton {
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        background-color: #007BFF;
+        color: white;
+        cursor: pointer;
+    }
+    .todoListButton:hover {
+        background-color: #0056b3;
+    }
+</style>
+<body>
+    <center>
+        <h1>To Do List</h1>
+    </center>
+    <!-- to do input div -->
+    <div id="inputCard" class="todo-input-card">
+        <input type="text">
+        <button onclick="addTodo()">+</button>
+    </div>
+
+    <button class="todoListButton" onclick="showTodoList()">List All</button>
+
+    <div class="todo-list-card">
+        <ul id="todoItems">
+            <!-- List items will be added here dynamically -->
+             
+        </ul>
+    </div>
+    <script>
+        function addTodo(){
+            var inputCard = document.getElementById("inputCard");
+            // add a new input field to the inputCard div and plus button at side to new line
+            var newInput = document.createElement("input");
+            newInput.type = "text";
+            inputCard.appendChild(newInput);
+            var newButton = document.createElement("button");
+            newButton.innerHTML = "+";
+            newButton.onclick = addTodo;
+            inputCard.appendChild(newButton);
+            // move the input field and plus button to the next line
+            inputCard.appendChild(document.createElement("br"));
+        }
+
+        function showTodoList(){
+            // hide list button
+            var listButton = document.querySelector(".todoListButton");
+            listButton.style.display = "none";
+            // add all input field values to the todoItems ul as li elements
+            var inputCard = document.getElementById("inputCard");
+            var inputs = inputCard.getElementsByTagName("input");
+            var todoItems = document.getElementById("todoItems");
+            for(var i=0; i<inputs.length; i++){
+                if(inputs[i].value.trim() !== ""){
+                    var li = document.createElement("li");
+                    li.innerHTML = inputs[i].value;
+                    todoItems.appendChild(li);
+                }
+            }
+        }
+    </script>
+</body>
+</html>
