@@ -1,0 +1,51 @@
+#nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0077B6; /* your blue */
+  color: #ffffff;
+  padding: 12px 30px;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Left side */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* App title */
+.nav-left h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Links */
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #CAF0F8; /* light hover color */
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  #nav {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .nav-links a {
+    margin: 5px;
+    display: inline-block;
+  }
+}

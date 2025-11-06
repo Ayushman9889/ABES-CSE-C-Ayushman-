@@ -1,11 +1,19 @@
-import { useState } from 'react'
 import './App.css'
+import Card from './component/Card';
+import Navbar from './component/Navbar';
+import 'bootstrap/dist/css/bootstrap.css';
 
-function App(){
-  return(
-    <>
-    <h1>welcome</h1>
-    </>
+function App() {
+  return (
+    <div>
+      <Navbar />
+      <br />
+      <Card />
+      <br />
+      <Card />
+      <br />
+      <Card />
+    </div>
   )
 }
 
